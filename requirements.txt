@@ -1,8 +1,8 @@
 asgiref==3.2.3
-Django
-django-filter==1.1.0
-djangorestframework==3.11.0
-djangorestframework-filters==0.11.1
+Django==1.11.28
+django-filter==2.2.0
+djangorestframework==3.9.4
+djangorestframework-filters==1.0.0.dev0
 Markdown==3.1.1
 pytz==2019.3
 six==1.14.0

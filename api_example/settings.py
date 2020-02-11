@@ -126,7 +126,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 REST_FRAMEWORK = {
-    'DEFAULT_FILTER_BACKENDS': (
-        'rest_framework_filters.backends.RestFrameworkFilterBackend', ...
-    ),
+    "DEFAULT_VERSIONING_CLASS":
+        "rest_framework.versioning.NamespaceVersioning",
 }
