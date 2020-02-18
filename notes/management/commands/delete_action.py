@@ -17,7 +17,8 @@ class Command(BaseCommand):
 
         print("Starting deletion...")
         start = time.process_time()
-        Action.objects.all().delete()
+        qs = Action.objects.all()
+        qs.delete()
         print(f"Finishing: {time.process_time() - start} seconds.")
         print("All objects removed.")
 
