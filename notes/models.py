@@ -9,3 +9,10 @@ class Note(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Action(models.Model):
+    name = models.CharField(max_length=250)
+    description = models.TextField()
+    modified = models.DateTimeField(auto_now_add=True)
+    created = models.DateTimeField(auto_now=True)
